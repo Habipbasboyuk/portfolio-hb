@@ -8,6 +8,9 @@
 @import url('./footer.css');
 @import url('./animations.css');
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;

@@ -13,36 +13,46 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    gap: 1rem;
+    gap: 3rem;
     width: 90%;
 }
 
 .about__skills {
     padding-left: 1rem;
     margin-top: 2rem;
-
+    margin-bottom: 2rem;
     .about__skills-title {
         margin-bottom: 1rem;
         text-align: center;
     }
-    .about__skills-list-wrapper {
-        padding-left: 1rem;
-    }
+.about__skills-list-wrapper {
+    max-width: 800px;    /* Set a max width */
+    margin: 0 auto;      /* Center the wrapper */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0;
+}
+}
+.about__skills-list {
+    columns: 2;              /* 2 columns on mobile/tablet */
+    column-gap: 3rem;        /* space between columns */
+    padding: 0;
+    margin: 0 auto; 
+    margin-bottom: 2rem;         /* center the list itself */
+    width: 100%;
+    max-width: 600px;        /* limit width for centering */
+    text-align: center;      /* center text in each item */
 }
 
-.about__skills-list {
-    columns: 2;
-    column-gap: 2rem;
-    
-    padding: 0;
-    margin: 0;
-}
 
 .about__skills-item {
     list-style: none;
     margin-bottom: 0.5rem;
     position: relative;
     padding-left: 1.5em;
+    width: max-content;
 }
 
 
@@ -52,4 +62,38 @@
     color: #7B3AED;
     font-size: 1em;
     line-height: 1;
+}
+
+
+@media (min-width: 50rem) {
+
+    .about__description {
+        width: 70%;
+        color: #4B5563;
+        margin: 0 auto;
+    }
+
+    .about__content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: center;
+
+    }
+
+    .about__skills-list-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__skills-list {
+        columns: 3;          /* 3 columns on desktop */
+        max-width: 800px;
+    }
+    .about__skills-item {
+        flex: 1 1 20%; /* Adjust for 3-5 per row as needed */
+        max-width: 200px;
+        min-width: 120px;
+        text-align: left;
+    }
 }

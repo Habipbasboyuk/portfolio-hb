@@ -4,13 +4,20 @@
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    position: absolute;
+    position: sticky; /* or use 'fixed' for always visible */
     top: 0;
     z-index: 1000;
-    background: rgba(226, 172, 255, 0.3);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     color: #8B5CF6;
+}
+
+.navigation-list__item {
+    a {
+    text-decoration: none;
+    color: #8B5CF6;
+    font-weight: 500;
+    }
 }
 
 .hamburger-icon {
