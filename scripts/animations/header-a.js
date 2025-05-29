@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         repeat: -1
     });
 
+      gsap.to('.umlaut-dot', {
+    opacity: 1,
+    y: 0.1, // since your CSS starts at translateY(-10px), this brings it to 0
+    duration: 0.3,
+    stagger: 0,
+    ease: ""
+  });
+
 });
 
 const aboutSection = document.querySelector('.about__skills');
@@ -25,9 +33,9 @@ const aboutObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
 if (entry.isIntersecting && !aboutChecksAnimated.value) {
   gsap.to('.about__check', { 
-    y: -3,                // more visible movement
-    duration: 1,          // slower, smoother
-    ease: "power1.inOut", // smooth easing
+    y: -3,
+    duration: 1.5,
+    ease: "power1.inOut",
     yoyo: true, 
     repeat: -1, 
   });
@@ -39,3 +47,6 @@ if (entry.isIntersecting && !aboutChecksAnimated.value) {
 if (aboutSection) {
   aboutObserver.observe(aboutSection);
 }
+
+// Add this to trigger the animation after a delay or on some event
+document.querySelector('.umlaut-container').classList.add('animate');

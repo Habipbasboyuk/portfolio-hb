@@ -2,6 +2,36 @@
   background: linear-gradient(to bottom, #f0f2ff, #f3f3ff);
   height: 100vh;
 }
+.lastname {
+  font-size: 2rem;
+  font-family: inherit;
+  position: relative;
+}
+
+.umlaut-container {
+  position: relative;
+  display: inline-block;
+}
+
+.umlaut-dot {
+  position: absolute;
+  top: 0.20em;
+  width: 0.2em;
+  height: 0.2em;
+  background: #7B3AED;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+.dot-left {
+  left: 0.10em;
+}
+
+.dot-right {
+  left: 0.35em;
+}
 
 .intro__image {
   width: 10rem;

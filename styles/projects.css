@@ -56,17 +56,39 @@
 }
 
 @media(min-width: 50rem) {
- .projects {
-        padding-top: 3rem;
- }
+  .projects {
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
-    .projects__list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-    
-        .projects__item {
-            width: 45%;
-        }
+  .projects__list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2rem;
+    margin: 0rem 1rem 0rem 1rem;
+    width: 98%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &::-webkit-scrollbar {
+        height: 3px;
+        background: #fff;
+        border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #c09bff;
+        border-radius: 4px;
+    }
+  }
+
+  .projects__item {
+    flex: 0 0 35%;
+    scroll-snap-align: start;
+    min-width: 20vw; /* Change from width to min-width */
+    width: 20rem
+  }
 }
