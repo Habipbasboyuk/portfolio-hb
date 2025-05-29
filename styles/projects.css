@@ -50,6 +50,11 @@
     background-color: white;
 }
 
+.projects__button {
+    display: flex;
+    justify-self: center;
+}
+
 @media(min-width: 50rem) {
  .projects {
         padding-top: 3rem;
