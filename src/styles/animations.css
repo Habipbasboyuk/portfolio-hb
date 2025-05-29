@@ -1,0 +1,31 @@
+@keyframes fadeInLeftToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRightToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.fade-in {
+    animation: fadeInLeftToRight 0.5s ease-out forwards;
+}
+
+.fade-in-right {
+    animation: fadeInRightToLeft 0.5s ease-out forwards;
+}
+

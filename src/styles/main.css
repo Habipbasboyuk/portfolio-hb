@@ -1,0 +1,45 @@
+@import url('./header.css');
+@import url('./intro.css');
+@import url('./button.css');
+@import url('./projects.css');
+@import url('./about.css');
+@import url('./contact.css');
+@import url('./contactform.css');
+@import url('./footer.css');
+@import url('./animations.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    display: block;
+}
+
+.nonactive {
+    display: none;
+}
+
+.label {
+    background-color: #EDE9FE;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    border-left: 2px #8B5CF6 solid;
+
+    color: #8B5CF6;
+}
+
+.purple {
+    color: #8B5CF6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p, a, button, li, label, input, textarea {
+    font-family: 'Manrope', sans-serif;
+}

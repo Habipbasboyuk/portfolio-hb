@@ -1,0 +1,24 @@
+.btn {
+
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: white;
+
+    text-decoration: none;
+    color: #7B3AED;
+}
+
+.btn--work {
+    background-color: #7C3AED;
+    color: white;
+}
+
+.btn--contact, .projects__button {
+    border: 1px solid #7B3AED;
+}
+
+.projects__button {
+    margin-top: 1rem;
+    display: block;
+    
+}

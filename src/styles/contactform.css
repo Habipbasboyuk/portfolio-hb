@@ -1,0 +1,40 @@
+.contact__form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .contact__input {
+        padding: 0.5rem;
+        border: 1px solid #D1D5DB;
+        border-radius: 0.25rem;
+    }
+
+    .contact__textarea {
+        padding: 0.5rem;
+        border: 1px solid #D1D5DB;
+        border-radius: 0.25rem;
+        resize: vertical;
+        min-height: 100px;
+    }
+}
+
+.contact__button {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+.about {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about__title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+    width: 90%;
+}
+
+.about__skills {
+    padding-left: 1rem;
+    margin-top: 2rem;
+
+    .about__skills-title {
+        margin-bottom: 1rem;
+    }
+    .about__skills-list-wrapper {
+        padding-left: 1rem;
+    }
+}
+
+.about__skills-list {
+    columns: 2;
+    column-gap: 2rem;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.about__skills-item {
+
+    margin-bottom: 0.5rem;
+}
