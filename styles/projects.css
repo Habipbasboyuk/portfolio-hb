@@ -52,7 +52,6 @@
 
 .projects__button {
     display: flex;
-    justify-self: center;
 }
 
 @media(min-width: 50rem) {
