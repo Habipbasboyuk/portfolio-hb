@@ -7,15 +7,15 @@ const projectsContainer = document.querySelector(".projects__list");
 if (projectsContainer) {
   projects.forEach((project) => {
     projectsContainer.innerHTML += `
-            <a href="detail-page.html?id=${project.id}">
-                <article class="projects__item animation">
+    <article class="projects__item animation">
+    <a href="detail-page.html?id=${project.id}">
                     <img src=${project.banner} alt="" class="projects__image">
                     <div class="project__content">
                         <h3 class="projects__item-title">${project.title}</h3>
                         <p class="projects__item-description">${project.description}</p>
                     </div>
+
                 </article>
-            </a>
         `;
   });
 }
