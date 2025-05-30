@@ -51,8 +51,8 @@
 }
 
 .projects__button {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 @media(min-width: 50rem) {
