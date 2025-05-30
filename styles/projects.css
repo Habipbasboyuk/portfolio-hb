@@ -43,6 +43,7 @@
 
 .projects__item {
     width: 90%;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 
@@ -98,6 +99,7 @@
     flex: 0 0 35%;
     scroll-snap-align: start;
     min-width: 20vw; /* Change from width to min-width */
-    width: 20rem
+    width: 20rem;
+    height: 100%;
   }
 }
