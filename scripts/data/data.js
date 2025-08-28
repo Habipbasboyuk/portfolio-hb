@@ -43,21 +43,26 @@
     },
     {
         id: 3,
-        title: "Weather App",
-        description: "A simple weather application that provides current weather information for any location.",
-        banner: "assets/projects/todo.png",
+        title: "ToDo List",
+        description: "A task management application that helps users organize and prioritize their daily tasks.",
+        banner: "assets/projects/todo/pgm4-home.png",
         details: {
-            intro: "This project is a simple weather application that allows users to get current weather information for any location. It uses a weather API to fetch real-time data and display it in a user-friendly interface.",
+            intro: "This project is a task management application designed to help users organize and prioritize their daily tasks. It features a simple and intuitive interface where users can add, edit, and delete tasks, as well as mark them as completed.",
 
                         codeImages: [
-                "assets/projects/griffin/griffin.png",
-                "assets/projects/griffin/carreergriffin.png",
-                "assets/projects/griffin/griffinabout.png",
-                "assets/projects/griffin/code1griffin.png",
-                "assets/projects/griffin/code2griffin.png"
+                "assets/projects/todo/pgm4-home.png",
+                "assets/projects/todo/pgm-4change.png",
+                "assets/projects/todo/pgm4changed.png",
+                "assets/projects/todo/pgm-4addtodo.png",
+                "assets/projects/todo/addedtaskpgm4.png",
+                "assets/projects/todo/datacode.png",
+                "assets/projects/todo/app.png",
+                "assets/projects/todo/taskcategories.png"
             ],
 
-            technologies: ["HTML", "CSS", "JavaScript"],
+            technologies: ["HTML", "CSS", "JavaScript", "React"],
         }
-    }
+    },
+    
+
 ]
