@@ -1,6 +1,12 @@
 import { projects } from "./data/data.js";
 
-// loading projects dynamically on the homepage
+const $hamburger = document.querySelector(".hamburger-icon");
+const $navMenu = document.querySelector(".navigation");
+
+$hamburger.addEventListener("click", () => {
+  $hamburger.classList.toggle("active");
+  $navMenu.classList.toggle("active");
+});
 
 const projectsContainer = document.querySelector(".projects__list");
 

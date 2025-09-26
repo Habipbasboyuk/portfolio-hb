@@ -18,34 +18,41 @@
 }
 
 .about__skills {
-    padding-left: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    .about__skills-title {
-        margin-bottom: 1rem;
-        text-align: center;
-    }
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__skills-title {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
 .about__skills-list-wrapper {
-    max-width: 800px;    /* Set a max width */
-    margin: 0 auto;      /* Center the wrapper */
+    max-width: 800px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 0;
-}
-}
-.about__skills-list {
-    columns: 2;              /* 2 columns on mobile/tablet */
-    column-gap: 3rem;        /* space between columns */
-    padding: 0;
-    margin: 0 auto; 
-    margin-bottom: 2rem;         /* center the list itself */
-    width: 100%;
-    max-width: 600px;        /* limit width for centering */
-    text-align: center;      /* center text in each item */
+    align-items: center;
 }
 
+.about__skills-list {
+    columns: 2;
+    column-gap: 3rem;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: min-content;
+    max-width: 600px;
+    text-align: center;
+
+    
+}
 
 .about__skills-item {
     list-style: none;
@@ -53,6 +60,9 @@
     position: relative;
     padding-left: 1.5em;
     width: max-content;
+    
+    word-break: break-word;
+    hyphens: auto;
 }
 
 

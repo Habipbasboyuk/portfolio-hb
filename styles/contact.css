@@ -13,4 +13,6 @@
 .contact__description {
     text-align: center;
     margin-bottom: 2rem;
+    width: 90%;
+    margin: 0 auto;
 }
