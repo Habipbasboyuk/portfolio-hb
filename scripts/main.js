@@ -1,7 +1,7 @@
 import { projects } from "./data/data.js";
 
 const $hamburger = document.querySelector(".hamburger-icon");
-const $navMenu = document.querySelector(".navigation");
+const $navMenu = document.querySelector(".header__hamburger-nav");
 
 $hamburger.addEventListener("click", () => {
   $hamburger.classList.toggle("active");
