@@ -1,12 +1,19 @@
 import { projects } from "./data/data.js";
 
-const $hamburger = document.querySelector(".hamburger-icon");
-const $navMenu = document.querySelector(".header__hamburger-nav");
+if (window.location.pathname.endsWith("index.html") || 
+    window.location.pathname === "/" || 
+    window.location.pathname.endsWith("/")) {
+  
+  const $hamburger = document.querySelector(".hamburger-icon");
+  const $navMenu = document.querySelector(".header__hamburger-nav");
 
-$hamburger.addEventListener("click", () => {
-  $hamburger.classList.toggle("active");
-  $navMenu.classList.toggle("active");
-});
+  if ($hamburger && $navMenu) {
+    $hamburger.addEventListener("click", () => {
+      $hamburger.classList.toggle("active");
+      $navMenu.classList.toggle("active");
+    });
+  }
+}
 
 const projectsContainer = document.querySelector(".projects__list");
 
